@@ -21,7 +21,7 @@ def main():
         sys.exit(errno.EPERM)
 
 
-
+    #TODO : move the RSS Link To Config (mDownloader.ini)
     monitor = RssMonitor("https://www.moridim01.tv/rss")
     monitor_stop_func = call_repeatedly(float(Conf_ini.conf.get(Conf_ini.Keys.rss, Conf_ini.Keys.checkInterval)),
                                         monitor.monitor)
