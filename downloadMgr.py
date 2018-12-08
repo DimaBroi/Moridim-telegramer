@@ -11,7 +11,7 @@ class downloadMgr:
     logger = logging.getLogger(__name__)
     list = None
 
-    def __init__(self,download_list):
+    def __init__(self, download_list):
         self.list = download_list
 
     def download(self):
