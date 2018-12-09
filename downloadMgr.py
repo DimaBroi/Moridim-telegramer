@@ -16,7 +16,7 @@ class downloadMgr:
 
     def download(self, blocking=False):
         session_requests = requests.session()
-
+        #TODO : Move To Config File
         login_url = "https://www.nitrobit.net/login"
         result = session_requests.get(login_url)
         tree = html.fromstring(result.text)
